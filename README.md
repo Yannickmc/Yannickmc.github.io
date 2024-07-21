@@ -1,72 +1,102 @@
-# Aliplayer
+# Movie Streaming Service
 
-A simple, elegant web-based audio player with a playlist, featuring songs by Maher Zain.
+Welcome to the Movie Streaming Service! This project aims to provide a fully functional movie streaming platform where users can watch and discover movies.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
-## Introduction
-
-Aliplayer is a straightforward web-based audio player designed to provide a seamless listening experience. The player includes a playlist of various audio tracks by Maher Zain, allowing users to enjoy their favorite songs.
-
 ## Features
 
-- Responsive design for various screen sizes.
-- Simple user interface for easy navigation.
-- Playlist with auto-play next song feature.
-- Hover effect on playlist items.
-- Customizable via HTML and CSS.
-
-## Demo
-
-You can view a live demo of the Aliplayer [here](#).
+- **User Authentication**: Secure sign-up and login functionalities.
+- **Movie Database**: Extensive collection of movies with details like title, genre, and description.
+- **Streaming**: Smooth streaming experience with high-quality video playback.
+- **Search and Filter**: Easily search and filter movies based on different criteria.
+- **Watchlist**: Add movies to your watchlist to view later.
+- **Reviews and Ratings**: Leave reviews and ratings for movies you've watched.
 
 ## Installation
 
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- MongoDB
+- (Optional) Docker
+
+### Steps
+
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/aliplayer.git
+    ```sh
+    git clone https://github.com/yourusername/movie-streaming-service.git
+    cd movie-streaming-service
     ```
 
-2. Navigate to the project directory:
-    ```bash
-    cd aliplayer
+2. Install dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
     ```
 
-3. Open the `index.html` file in your web browser to view the player.
+3. Set up environment variables:
+    Create a `.env` file in the root directory and add your MongoDB URI and other necessary environment variables.
+
+    ```
+    MONGODB_URI=your_mongodb_uri
+    JWT_SECRET=your_jwt_secret
+    ```
+
+4. Start the development server:
+    ```sh
+    npm start
+    # or
+    yarn start
+    ```
+
+5. (Optional) Using Docker:
+    ```sh
+    docker-compose up --build
+    ```
 
 ## Usage
 
-1. Open the `index.html` file in your favorite web browser.
-2. Click on any song in the playlist to start playing it.
-3. Use the audio controls to play, pause, and navigate through the song.
+1. Open your web browser and navigate to `http://localhost:3000`.
+2. Sign up for a new account or log in if you already have one.
+3. Browse through the movie collection and start streaming!
+
+## Technologies Used
+
+- **Frontend**: React, Redux, CSS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **Authentication**: JWT (JSON Web Tokens)
+- **Video Streaming**: HTML5 Video, HLS.js
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute, please follow these steps:
+Contributions are welcome! Please follow these steps to contribute:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
-
-Please make sure to update tests as appropriate.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
-yannickmc - [sidcalitiger@gmail.com](yanninkmc:sidcalitiger@gmail.com)
+For any questions or feedback, please reach out to me at [sidcalitiger@gmail.com](mailto:sidcalitiger@gmail.com).
 
-Project Link: [https://yannickmc.github.io]([(https://yannickmc.github.io/)](https://yannickmc.github.io/))
+---
+
+Happy streaming!
